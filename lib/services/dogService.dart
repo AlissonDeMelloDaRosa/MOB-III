@@ -9,7 +9,7 @@ class DogService {
     final response = await http.get(Uri.parse(dogceoUrl));
 
     if (response.statusCode == 200) {
-      return Dog.fromJson(jsonEncode(response.body) as Map<String, dynamic>);
+      return Dog.fromJson(jsonDecode(response.body) as Map<String, dynamic>);
     }
     throw Exception("Erro interno, chama o dev ${response.statusCode}");
   }
