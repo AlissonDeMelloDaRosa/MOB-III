@@ -57,7 +57,11 @@ class _LoginPageState extends State<LoginPage> {
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  Image.asset('upf.png', height: 160, fit: BoxFit.contain),
+                  Image.asset(
+                    'assets/upf.png',
+                    height: 160,
+                    fit: BoxFit.contain,
+                  ),
                   const SizedBox(height: 24),
                   Text('Bem-vindo', style: theme.textTheme.headlineMedium),
                   const SizedBox(height: 8),
